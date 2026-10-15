@@ -13,12 +13,18 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    # 1. Install the official Geode CLI
+    - name: Setup Geode CLI
+      uses: geode-sdk/install-geode-cli@main
+
+    # 2. Build the Geode mod using the official action wrapper
     - name: Build Geode Mod
       uses: geode-sdk/build-geode-mod@main
       id: build
       with:
         target: Win64
 
+    # 3. Upload the compiled .geode artifact
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
