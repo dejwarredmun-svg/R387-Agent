@@ -1,0 +1,13 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.206"
+	},
+	"id": "dejwar387.r387_agent",
+	"name": "R387 Agent",
+	"version": "1.0.0",
+	"developer": "Dejwar387",
+	"description": "Transform images into real, editable Geometry Dash decorations using your chosen objects.",
+	"repository": "https://github.com/dejwar387/r387-agent",
+	"dependencies": []
+}
