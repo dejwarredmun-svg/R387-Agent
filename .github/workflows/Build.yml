@@ -13,7 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Build Geode Mod
+    # This official action automatically handles the Geode SDK, CLI, and toolchain setup
+    - name: Build Geode Mod with CLI
       uses: geode-sdk/build-geode-mod@main
       id: build
       with:
