@@ -13,14 +13,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    # This official action automatically handles the Geode SDK, CLI, and toolchain setup
-    - name: Build Geode Mod with CLI
+    - name: Build Geode Mod with CLI Action
       uses: geode-sdk/build-geode-mod@main
       id: build
       with:
         target: Win64
 
-    - name: Upload Artifact
+    - name: Upload .geode Artifact
       uses: actions/upload-artifact@v4
       with:
         name: r387-agent.geode
