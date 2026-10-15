@@ -13,7 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    # This handles the Geode CLI environment provisioning and builds the mod cleanly
     - name: Build Geode Mod
       uses: geode-sdk/build-geode-mod@main
       id: build
